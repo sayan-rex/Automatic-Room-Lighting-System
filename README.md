@@ -32,3 +32,13 @@ This project implements an **automatic room light controller** using an **ATmega
 | PC1 | IR Sensor 2      |
 | PD0 | Relay Output     |
 | PORTB | 7-Segment (a–g) |
+
+## 🔧 Tools Used (Windows)
+
+| Tool             | Description                                                                 |
+|------------------|-----------------------------------------------------------------------------|
+| **Programmer**   | [USBasp](https://www.fischl.de/usbasp/) – USB In-System Programmer for AVR  |
+| **IDE**          | [Atmel Studio 7](https://www.microchip.com/en-us/tools-resources/develop/microchip-studio) – Windows-based IDE for writing, compiling, and managing AVR projects |
+| **Flashing Tool**| `avrdude` – Used for uploading `.hex` files to the ATmega32 via USBasp       |
+| **Driver (for USBasp)** | [Zadig](https://zadig.akeo.ie/) – Use to install `libusb-win32` driver |
+| **Debugger**     | ❌ ATmega32 does not support real-time debugging.<br>✅ Use LED indicators, 7-segment display output, or USART serial print for logic-level debugging |
