@@ -38,7 +38,7 @@ This project implements an **automatic room light controller** using an **ATmega
 | Tool             | Description                                                                 |
 |------------------|-----------------------------------------------------------------------------|
 | **Programmer**   | [USBasp](https://www.fischl.de/usbasp/) – USB In-System Programmer for AVR  |
-| **IDE**          | [Atmel Studio 7](https://www.microchip.com/en-us/tools-resources/develop/microchip-studio) – Windows-based IDE for writing, compiling, and managing AVR projects |
+| **IDE**          | [Atmel Studio 7/Microchip Studio for AVR® and SAM Devices](https://www.microchip.com/en-us/tools-resources/develop/microchip-studio) – Windows-based IDE for writing, compiling, and managing AVR projects |
 | **Flashing Tool**| `avrdude` – Used for uploading `.hex` files to the ATmega32 via USBasp       |
 | **Driver (for USBasp)** | [Zadig](https://zadig.akeo.ie/) – Use to install `libusbk` driver |
 | **Debugger**     | ❌ ATmega32 does not support real-time debugging.<br>✅ Use LED indicators, 7-segment display output, or USART serial print for logic-level debugging |
