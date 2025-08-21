@@ -1,15 +1,15 @@
-# 🔆 Automatic Room Lighting System (ATmega32 + IR)
+# Automatic Room Lighting System (ATmega32 + IR)
 
 This project implements an **automatic room light controller** using an **ATmega32 microcontroller**, **IR sensors**, and a **relay** to automate lighting based on room occupancy.
 
-## 🚀 Features
+## Features
 
 - Detects entry/exit using two IR sensors
 - Controls lights/fans via relay
 - Shows live count of people in room using a 7-segment display
 - Energy-saving automation solution
 
-## 🧰 Hardware Used
+## Hardware Used
 
 - ATmega32
 - IR Sensors × 2
@@ -18,13 +18,13 @@ This project implements an **automatic room light controller** using an **ATmega
 - 16MHz Crystal + Capacitors
 - Resistors, Breadboard, Power Supply
 
-## 🛠 How It Works
+## How It Works
 
 - **Entry (Sensor1 → Sensor2):** Increment person count, turn on light/fan
 - **Exit (Sensor2 → Sensor1):** Decrement person count
 - **If Count = 0:** Turn off light/fan
 
-## 💡 Wiring
+## Wiring
 
 | Pin | Function         |
 |-----|------------------|
@@ -33,7 +33,7 @@ This project implements an **automatic room light controller** using an **ATmega
 | PD0 | Relay Output     |
 | PORTB | 7-Segment (a–g) |
 
-## 🔧 Tools Used (Windows)
+## Tools Used (Windows)
 
 | Tool             | Description                                                                 |
 |------------------|-----------------------------------------------------------------------------|
@@ -41,4 +41,4 @@ This project implements an **automatic room light controller** using an **ATmega
 | **IDE**          | [Atmel Studio 7/Microchip Studio for AVR® and SAM Devices](https://www.microchip.com/en-us/tools-resources/develop/microchip-studio) – Windows-based IDE for writing, compiling, and managing AVR projects |
 | **Flashing Tool**| `avrdude` – Used for uploading `.hex` files to the ATmega32 via USBasp       |
 | **Driver (for USBasp)** | [Zadig](https://zadig.akeo.ie/) – Use to install `libusbk` driver |
-| **Debugger**     | ❌ ATmega32 does not support real-time debugging.<br>✅ Use LED indicators, 7-segment display output, or USART serial print for logic-level debugging |
+| **Debugger**     | ❌ ATmega32 does not support real-time debugging.<br>Use LED indicators, 7-segment display output, or USART serial print for logic-level debugging |
